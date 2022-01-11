@@ -92,6 +92,9 @@ set(ZLIB_PUBLIC_HDRS
     zlib.h
 )
 set(ZLIB_PRIVATE_HDRS
+    contrib/minizip/crypt.h
+    contrib/minizip/ioapi.h
+    contrib/minizip/unzip.h
     crc32.h
     deflate.h
     gzguts.h
@@ -105,6 +108,8 @@ set(ZLIB_PRIVATE_HDRS
 set(ZLIB_SRCS
     adler32.c
     compress.c
+    contrib/minizip/ioapi.c
+    contrib/minizip/unzip.c
     crc32.c
     deflate.c
     gzclose.c
