@@ -4,7 +4,7 @@
  */
 
 #include "gzguts.h"
-#ifdef __APPLE__
+#ifdef __APPLE__ || __EMSCRIPTEN__
    #include <unistd.h>
 #endif
 
